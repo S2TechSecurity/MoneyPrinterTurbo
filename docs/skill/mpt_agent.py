@@ -20,7 +20,7 @@ from pathlib import Path
 
 
 PROJECT_ARCHIVE_URL = (
-    "https://github.com/harry0703/MoneyPrinterTurbo/archive/refs/heads/main.zip"
+    "https://github.com/S2TechSecurity/MoneyPrinterTurbo/archive/refs/heads/main.zip"
 )
 DEFAULT_ROOT = Path.home() / "MoneyPrinterTurbo"
 DEFAULT_VOICE_NAME = "zh-CN-XiaoxiaoNeural-Female"
@@ -54,6 +54,10 @@ PEXELS_API_KEY_HELP_URL = (
 # Keep the recommended list focused on commonly used providers. When an LLM
 # key is missing, the helper emits all choices at once to avoid extra turns.
 RECOMMENDED_LLM_PROVIDERS = {
+    "s2_gateway": (
+        "S2 AI Gateway (S2-managed)",
+        "https://ai.s2tech.co.za/",
+    ),
     "moonshot": (
         "Kimi / Moonshot AI",
         "https://platform.kimi.com?track_id=track-6eec1e56a4494e52adcaebbcbbefce59&aff=moneyprinterturbo",
