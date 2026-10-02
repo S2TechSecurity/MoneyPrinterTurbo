@@ -347,6 +347,12 @@ class TestLiteLLMProvider(unittest.TestCase):
 
     def test_current_default_model_names(self):
         """WebUI 与服务层必须共享同一组默认模型，避免展示值和请求值漂移。"""
+        s2_gateway = get_llm_provider("s2_gateway")
+        self.assertIsNotNone(s2_gateway)
+        self.assertEqual(s2_gateway.default_model, "creative")
+        self.assertEqual(s2_gateway.default_base_url, "http://127.0.0.1:8787/v1")
+        self.assertEqual(s2_gateway.adapter, "openai_compatible")
+        self.assertTrue(s2_gateway.requires_api_key)
         self.assertEqual(get_llm_provider("openai").default_model, "gpt-5.5")
         anthropic = get_llm_provider("anthropic")
         self.assertEqual(anthropic.default_model, "claude-sonnet-5")
