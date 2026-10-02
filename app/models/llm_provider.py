@@ -233,6 +233,14 @@ LLM_PROVIDER_REGISTRY = (
         default_service_endpoint_id="china",
         international_service_endpoint_id="global",
     ),
+    # S2 Tech private OpenAI-compatible routing layer. The credential here is
+    # the S2 Gateway bearer token, not a paid OpenAI API key.
+    LLMProviderSpec(
+        "s2_gateway",
+        "S2 AI Gateway",
+        default_model="creative",
+        default_base_url="http://127.0.0.1:8787/v1",
+    ),
     # 主流模型原厂与云厂商
     LLMProviderSpec(
         "openai",

@@ -229,6 +229,7 @@
     "LLM Provider": "LLM Provider",
     "Recommended": "Recommended",
     "llm_provider_label.moonshot": "Kimi / Moonshot AI (Recommended)",
+    "llm_provider_label.s2_gateway": "S2 AI Gateway",
     "llm_provider_label.shengsuanyun": "Shengsuan Cloud",
     "llm_provider_label.apimart": "APIMart",
     "llm_provider_label.openrouter": "OpenRouter",

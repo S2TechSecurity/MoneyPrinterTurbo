@@ -229,6 +229,7 @@
     "LLM Provider": "大模型提供商",
     "Recommended": "推荐",
     "llm_provider_label.moonshot": "Kimi / Moonshot AI（推荐）",
+    "llm_provider_label.s2_gateway": "S2 AI Gateway",
     "llm_provider_label.shengsuanyun": "胜算云",
     "llm_provider_label.apimart": "APIMart",
     "llm_provider_label.openrouter": "OpenRouter",

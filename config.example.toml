@@ -280,6 +280,13 @@ requesty_api_key = ""
 requesty_base_url = ""
 requesty_model_name = ""
 
+# S2 Tech AI Gateway. This uses an S2 Gateway bearer token, not a paid OpenAI key.
+# The local default points to the S2Tech1 gateway; override the base URL only when
+# MoneyPrinterTurbo is intentionally running against another approved S2 gateway.
+s2_gateway_api_key = ""
+s2_gateway_base_url = "http://127.0.0.1:8787/v1"
+s2_gateway_model_name = "creative"
+
 # OpenAI or another OpenAI Chat Completions-compatible provider.
 # API key: https://platform.openai.com/api-keys
 openai_api_key = ""
