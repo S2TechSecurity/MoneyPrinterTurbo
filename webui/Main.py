@@ -8411,3 +8411,18 @@ def _render_application():
 
 
 _render_application()
+
+st.markdown(
+    """
+    <div data-s2-signature="true" aria-label="Built by S2 Tech"
+         style="margin:1.5rem auto .5rem;padding-top:1rem;border-top:1px solid rgba(148,163,184,.14);
+                display:flex;align-items:center;justify-content:center;gap:.5rem;opacity:.68;
+                font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;">
+      <span aria-hidden="true"
+            style="width:34px;height:22px;display:inline-block;background:url('https://s2tech.co.za/assets/brand/s2tech-logo-runtime.webp') center/contain no-repeat;"></span>
+      <span>Built by S2</span>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
